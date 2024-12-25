@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img1{
+            margin-left: 650px;
+            width: 100px;
+
+        }
+        .maindiv{
+            background-color: rgb(240, 232, 233);
+            width: 35%;
+            margin: auto;
+            /* border: 2px solid rebeccapurple; */
+            padding: 10px;
+        }
+        .imgdiv img{
+            width: 150px;
+            height: 200px;
+            margin: 10px;
+            border: 2px solid gray;
+            border-radius: 20px;
+            box-shadow: 10px 10px 30px rgb(165, 160, 160);
+            /* opacity: 0.8; */
+            transition:transform 0.3s;
+        }
+        .imgdiv img:hover{
+            transform: scale(1.2);
+        }
+
+        .scorediv{
+            display: flex;
+            justify-content: space-around;
+            /* margin: 10px; */
+            
+        }
+        .scorediv div{
+            text-align: center;
+            font-weight: bold;
+            font-size: larger;
+            /* padding: 10px; */
+        }
+        #btn{
+            text-align: center;
+            font-size: larger;
+            margin: auto;
+            width: 200px;
+            padding: 10px;
+            font-weight: bold;
+            margin-left: 200px;
+            color: white;
+            background-color: blueviolet;
+        }
+        
+        #btn2{
+            text-align: center;
+            font-size: larger;
+            /* margin: auto; */
+            margin: 20px;
+            width: 200px;
+            padding: 10px;
+            font-weight: bold;
+            margin-left: 200px;
+            color: white;
+            background-color: blueviolet;
+        }
+
+
+    </style>
+</head>
+<body style="background-color:white ">
+    <!-- <img src="img1.png" id="img1" alt=""> -->
+    <div class="maindiv">
+
+        <div class="imgdiv">
+            <img src="rock.png" alt="" id="rock">
+            <img src="paper.png" alt="" id="paper">
+            <img src="scissor.jpg" alt="" id="scissor">
+        </div>
+        <div class="scorediv">
+            
+            <div class="leftdiv">
+                <br>
+                <p>user selected</p> <span id="user1"></span>
+                <br>
+                <p style="display: inline;">score:<span id="userscore"> 0</span></p>
+            </div>
+            <div class="rightdiv">
+                <br>
+                <p>computer selected</p><span id="comp1"></span>
+                <br>
+                <p style="display: inline;">score:<span id="compscore"> 0</span></p>
+            </div>
+        </div>
+        <button id="btn">PLAY</button>
+        <br>
+        <button id="btn2" onclick="replay()">Replay</button>
+        <br>
+        <!-- <span id="won" style="text-align: center;"> </span> -->
+        
+    </div>
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
